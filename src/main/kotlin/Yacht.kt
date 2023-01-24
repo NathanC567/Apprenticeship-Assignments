@@ -13,7 +13,7 @@ object Yacht {
             YachtCategory.FOUR_OF_A_KIND -> 0
             YachtCategory.LITTLE_STRAIGHT -> littleStraight(dices.toList())
             YachtCategory.BIG_STRAIGHT -> bigStraight(dices.toList())
-            YachtCategory.CHOICE -> 0
+            YachtCategory.CHOICE -> dices.sum()
         }
     }
 }

@@ -70,4 +70,10 @@ class YachtTest {
 
     @Test
     fun `no pairs but not a big straight`() = assertEquals(0, Yacht.solve(BIG_STRAIGHT, 6, 5, 4, 3, 1))
+
+    @Test
+    fun choice() = assertEquals(23, Yacht.solve(CHOICE, 3, 3, 5, 6, 6))
+
+    @Test
+    fun `yacht as choice`() = assertEquals(10, Yacht.solve(CHOICE, 2, 2, 2, 2, 2))
 }
