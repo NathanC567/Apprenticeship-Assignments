@@ -76,4 +76,14 @@ class YachtTest {
 
     @Test
     fun `yacht as choice`() = assertEquals(10, Yacht.solve(CHOICE, 2, 2, 2, 2, 2))
+
+    @Test
+    fun `four of a kind`() = assertEquals(24, Yacht.solve(FOUR_OF_A_KIND, 6, 6, 4, 6, 6))
+
+    @Test
+    fun `yacht can be scored as four of a kind`() = assertEquals(12, Yacht.solve(FOUR_OF_A_KIND, 3, 3, 3, 3, 3))
+
+
+    @Test
+    fun `full house is not four of a kind`() = assertEquals(0, Yacht.solve(FOUR_OF_A_KIND, 3, 3, 3, 5, 5))
 }
